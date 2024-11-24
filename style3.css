@@ -1,0 +1,333 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    }
+    .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 2000px;
+    margin: 20px auto;
+  
+    }
+    .sidebar, .profile, .main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  
+    }
+    .logo p{
+      background-color: #b1bcf6;
+      border-radius: 3px;
+      padding: 10px;
+    }
+    .logo p1{
+      margin-top: 10px;
+    }
+    .menu a{
+      display: block;
+      padding: 20px;
+      color: #6b6f82;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 40px;
+    }
+    .menu a:hover{
+      background-color: #e3e8fd;
+      font-weight: bold; /* Make the font bolder */
+      color:  #3f61f9; 
+    }
+  
+    .upgrade-btn button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-self: center;
+    }
+    .upgrade-btn button:hover {
+      background-color:  #b1bcf6; 
+    }
+    /* Main content styling */
+    .main-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 10px;
+    }
+    .picture{
+  
+      display: flex;
+      justify-content: flex-end; 
+      align-items: flex-start;
+  
+    }
+    .top-bar {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+    font-size: 10px;
+    }
+    .overview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    }
+    .Welcome {
+    background-color: lightpink;
+    padding: 20px;
+    border-radius: 10px;
+    grid-column: span 2;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    }
+  
+    .latest-results {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    }
+    .header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    }
+    .unit {
+    margin-bottom: 20px;
+    }
+    .unit h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    }
+    .progress-bar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 8px;
+    margin-top: 5px;
+    }
+    .progress-bar div {
+    height: 100%;
+    }
+    .progress-red { background-color: #ff4d4f; }
+    .progress-blue { background-color: #1890ff; }
+    .percentage {
+    font-size: 12px;
+    float: right;
+    color: #999;
+    }
+    .time-spent {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    }
+    .time-period {
+    font-size: 12px;
+    color: #999;
+    }
+    .time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .chart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    }
+    .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
+    }
+    .bar {
+    width: 8px;
+    height: 100px;
+    background-color: #eee;
+    position: relative;
+    }
+    .segment {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    }
+    .vocabulary { background-color: #ff4d4f;}
+    .grammar { background-color: #2f54eb;}
+    .listening { background-color: #ff18b2;}
+    .writing { background-color: #10ca09;}
+    .legend {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    }
+    .legend div {
+    display: flex;
+    align-items: center;
+    }
+    .legend div span {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    }
+    .your-courses {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    grid-column: span 2;
+    }
+    .courses-list {
+    display: flex;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    .Grammar {
+    background-color: #6f00ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    }
+    .Verbs {
+    background-color: rgb(169, 79, 225);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    }
+    .Vocabulary {
+    background-color: rgb(234, 81, 81);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    }
+    /* Profile section styling */
+  
+    .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+  
+    .logout{
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    }
+    .butlog {
+    width: 25px;
+    height: 25px;
+    }
+    .profile-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin: 10px;
+    }
+    .profile-info p{
+    font-size: 15px;
+    }
+    .Bio p{
+    font-size: 10px;
+    }
+    .language1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    margin: 10px;
+    }
+    .B2 , .C1{
+      background-color: #b1bcf6;
+      width: 25px;
+      height: 25px;
+      border: 0;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+    .language2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    margin: 10px;
+    }
+  
+    .reminders {
+    margin-top: 10px;
+  
+    }
+    h3 {
+    margin-bottom: 10px;
+    }
+    .Eng-Vocab {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2/3;
+    }
+    .Eng {
+    width: 30px;
+    height: 20px;
+    grid-column: span 1;
+    }
+  
+    .Eng-Send {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 2;
+    }
+    .Send {
+    width: 30px;
+    height: 20px;
+    grid-column: span 1;
+    }
+    .Spanish {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 2;
+    }
+    .Span-Send {
+    width: 30px;
+    height: 20px;
+    grid-column: span 1;
+    }
+    .Eng , .Send, .Span-Send{
+      background-color: pink;
+      border: 0;
+      border-radius: 5px;
+      margin: 20px;
+    }
